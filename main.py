@@ -1,5 +1,5 @@
-from Hierarchy import (VirtualMachine, DataBase, AutomaticBackup, 
-                       FirewallPremium, Support24x7, ResourceGroup ) 
+from Resource_Hierarchy.Hierarchy import (VirtualMachine, DataBase, AutomaticBackup,
+                                          FirewallPremium, Support24x7, ResourceGroup) 
 
 vm = VirtualMachine()
 db = DataBase() 
