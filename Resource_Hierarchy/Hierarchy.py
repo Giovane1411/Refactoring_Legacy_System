@@ -66,7 +66,7 @@ class AutomaticBackup(ServiceDecorator):
         return 50.0 + self.resource.get_price()
     
     def get_description(self):
-        return "+ Backup"
+        return self.resource.get_description() + " + Backup"
 
 class FirewallPremium(ServiceDecorator):
     
@@ -77,7 +77,7 @@ class FirewallPremium(ServiceDecorator):
         return 80.0 + self.resource.get_price()
     
     def get_description(self):
-        return "+ Firewall"
+        return self.resource.get_description() + " + Firewall"
 
 class Support24x7(ServiceDecorator):
 
@@ -89,4 +89,4 @@ class Support24x7(ServiceDecorator):
         return base + (10 * (base/100))
     
     def get_description(self):
-        return "+ VIP Support"
+        return self.resource.get_description() + " + VIP Support"
